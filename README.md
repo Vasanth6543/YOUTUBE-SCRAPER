@@ -1,15 +1,17 @@
-import yt_dlp
+# 🎥 YouTube Video Scraper
 
-video_url = input("Enter the YouTube video URL: ")
+This is a simple Python script using `yt_dlp` to extract key information from a YouTube video without downloading it.
 
-ydl_opts = {}
+## 📌 Features
+- Extracts video title
+- View count
+- Duration
+- Description (first 300 characters)
+- Uploader info
 
-with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-    info = ydl.extract_info(video_url, download=False)
-    
-    print("\n🎬 Video Information:")
-    print("Title      :", info.get('title'))
-    print("Views      :", info.get('view_count'))
-    print("Duration   :", info.get('duration'), "seconds")
-    print("Description:", info.get('description')[:300], "...")
-    print("Uploader   :", info.get('uploader'))
+## 🚀 Usage
+
+Run the script in terminal:
+
+```bash
+python youtube_scraper.py
