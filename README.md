@@ -1,60 +1,56 @@
-📝 Project Description:
-This is a simple yet powerful Python script that extracts detailed metadata from any public YouTube video using the yt-dlp library. The tool allows users to fetch and display information such as video title, view count, duration, uploader, and a trimmed version of the description. It is a beginner-friendly project designed to demonstrate web scraping techniques and working with external APIs using Python.
+YOUTUBE-SCRAPER
+Vasanth6543/YOUTUBE-SCRAPER
 
-This project is ideal for:
+This is a YouTube video scraper tool designed to extract video information, metadata, and details from YouTube channels or playlists.
+Built to be simple, efficient, and easy to use for data gathering or analysis purposes.
 
-Learning how to use external Python libraries
+📌 Features
+Video Metadata Extraction – Fetch video titles, descriptions, views, likes, comments, and more.
 
-Practicing API response handling
+Channel Scraping – Retrieve all videos from a specific YouTube channel.
 
-Getting started with media scraping or automation
+Playlist Support – Extract videos from public playlists.
 
-Building lightweight tools for content curation or research
+Data Export – Save scraped data in CSV or JSON formats.
 
-🎯 Features:
-🧾 Extract YouTube video title, views, and duration
+Command Line Interface – Easy to run and customize via terminal.
 
-📃 Fetch video descriptions (limited to 300 characters for readability)
+🛠️ Tech Stack
+Backend: Python
 
-📢 Display uploader/channel name
+Libraries: pytube, requests, BeautifulSoup (or your actual libraries)
 
-📥 Option to extend it for downloading videos/audio
+Data Storage: CSV, JSON files
 
-📚 Easy-to-read and modify code
-
-🛠️ Technologies Used:
-Python 3.x
-
-yt-dlp – a modern, actively maintained replacement for youtube-dl
-
-🚀 How to Use:
-Clone the repository or download the script
-
-Install dependencies:
-
-nginx
+📂 Project Structure
+bash
 Copy
 Edit
-pip install yt-dlp
-Run the script:
+/youtube-scraper
+  ├── scraper.py           # Main scraper script  
+  ├── requirements.txt     # Python dependencies  
+  ├── README.md            # Project documentation  
+  └── output/              # Folder for scraped data files
+🚀 How to Run the Scraper
+Clone the repository
 
-nginx
+bash
 Copy
 Edit
-python youtube_scraper.py
-Paste any YouTube video URL when prompted
+git clone https://github.com/Vasanth6543/YOUTUBE-SCRAPER.git
+Install dependencies
 
-View the video metadata in your terminal
-
-📌 Example Output:
-yaml
+bash
 Copy
 Edit
-🎬 Video Information:
-Title      : Sample YouTube Title
-Views      : 123456
-Duration   : 240 seconds
-Description: This is a short snippet of the video description...
-Uploader   : Example Channel
-🔒 License
-This project is open-source and free to use under the MIT License.
+pip install -r requirements.txt
+Run the scraper
+
+bash
+Copy
+Edit
+python scraper.py --channel CHANNEL_URL
+📧 Contact Me
+Email: vasanthoffl14@gmail.com
+GitHub: Vasanth6543
+
